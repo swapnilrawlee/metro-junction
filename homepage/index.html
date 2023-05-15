@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metro Junction  Mall </title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="shortcut icon" href="/homepage/imgs/logo.jpg" type="image/x-icon">
+    
+</head>
+<body>
+  <div class="header">
+    <img src="/homepage/imgs/logo.jpg" alt="logo" width="80px">
+    <div class="header-text">
+      <h1>Welcome to our Metro Junction Mall</h1>
+      <p>Explore the best shopping experience</p>
+    </div>
+    <div class="login">
+      <a href="/login&signup/login.html">Login</a>
+    </div>
+  </div>
+  
+  <div class="nav">
+    <a href="/homepage/index.html">Home</a>
+    <a href="/store/stores.html">Stores</a>
+    <a href="/events/events.html">Events</a>
+    <a href="/navbar/about_us.html">About Us</a>
+    <a href="/navbar/contactus.html">Contact Us</a>
+    <a href="/Parking Booking/parking.html">Book a Parking</a>
+  </div>
+   
+    <!-- Slider section -->
+    <div class="slider" >
+      <img class="slider-image active" src="/homepage/imgs/cityshor-small1.jpg" alt="Image 1">
+      <img class="slider-image" src="/homepage/imgs/voice-of-metro-2022.jpg" alt="Image 2">
+      <img class="slider-image" src="/homepage/imgs/cityshor-small1.jpg" alt="Image 3">
+      <img class="slider-image" src="/homepage/imgs/voice-winner-banner-mob.png" alt="Image 4">
+      <div class="slider-controls">
+        <button class="slider-control prev">&#10094;</button>
+        <button class="slider-control next">&#10095;</button>
+      </div>
+    </div>
+    <script >const images = document.querySelectorAll('.slider-image');
+      let currentImage = 0;
+      
+      function showImage(n) {
+        images[currentImage].classList.remove('active');
+        currentImage = (n + images.length) % images.length;
+        images[currentImage].classList.add('active');
+      }
+      
+      function nextImage() {
+        showImage(currentImage + 1);
+      }
+      
+      function prevImage() {
+        showImage(currentImage - 1);
+      }
+      
+      const nextButton = document.querySelector('.slider-control.next');
+      const prevButton = document.querySelector('.slider-control.prev');
+      
+      nextButton.addEventListener('click', nextImage);
+      prevButton.addEventListener('click', prevImage);
+      
+      setInterval(nextImage, 5000);</script>
+    <div class="content">
+        <h1>Featured Stores</h1>
+        <div class="store-card"  >
+          <img src="/img/Samsung_Logo_2005.png" alt="Store 1" width="442px" height="117px">
+          <img src="/img/Reliance-Digital-Logo-PNG-Transparent-image.png" alt="Store 1" width="300px" height="auto" style="padding-left: 90px;">
+          <img src="/img/croma.jpg" alt="Store 1" width="300px" height="auto">
+              <h3><a href="/store/electronic.html"> Digital Store</a></h3>
+          <p>Unleash the latest tech innovations, only at our electronic section</p>
+        </div>
+        <div class="store-card">
+          <img src="/img/barbeque.jpg" alt="Store 1" width="200px" height="auto" style="margin-left: 100px;">
+            <img src="/img/dcot-logo.png" alt="Store 2" width="300px" height="300px">
+            <img src="/img/haldiram.png" alt="Store 2" width="300px" height="300px">
+            <h3><a href="/store/food&beverages.html">Food Hub</a></h3>
+<p>A hub of flavors, for every mood and every taste!</p>
+          </div>
+    </div>
+    <div class="store-card">
+      <img src="/img/lifestyle.png" alt="Store 3" width="200px" height="auto" style="margin-left: 100px;">
+      <img src="/img/lee-cooper-logo.png" alt="Store 3" width="300px" height="300px">
+      <img src="/img/HM_logo_logotype_emblem-700x462.png" alt="Store 3" width="300px" height="auto" >
+      <h3> <a href="/store/fashion.html">Fashion store </a></h3>
+<p>Be the trendsetter, with our fashion that's better!</p>
+  </div>
+</div>
+<h2>From fashion to food, we have it all, at Metro Junction Mall</h2>
+<div class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Contact Us</h3>
+          <h4>Metro Junction   Mall:</h4>
+          <pre>
+2nd Floor, West Pioneer Properties, Netivali,
+Kalyan Shil Road, Kalyan (E)
+Phone: 0251 - 2351220/21/22</pre>
+<h4>Corporate Office:</h4>
+<pre>
+  Ashiana, 2Nd Floor
+  Bhulabhai Desai Road,
+  Mumbai, Maharashtra, India 400026
+  
+</pre>
+</div>
+        <div class="footer-right">
+          
+          <h3>Opening Hours</h3>
+          <p>Monday - Saturday: 10:00 AM - 9:00 PM</p>
+          <p>Sunday: 11:00 AM - 7:00 PM</p>
+          <h4>Marketing & Leasing Queries:</h4>
+            <p>
+            Please email us at info@westpioneerindia.com
+          </p> </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Metro Junction   Mall. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="/policy/privacy_policy.html">Privacy Policy</a></li>
+          <li><a href="/policy/terms_and_condition.html">Terms of Service</a></li>
+       <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+</div></body>
+</html>

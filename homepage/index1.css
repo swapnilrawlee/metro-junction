@@ -1,0 +1,281 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1c315e;
+  color: white;
+}
+
+.header-text {
+  flex-grow: 1;
+text-align: center;
+}
+
+.login {
+  margin-left: 20px;
+}
+.login a{
+  background-color: #227c70;
+  border: 1px solid #227c70;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #227c70;
+  padding: 10px;
+}
+
+.nav a {
+  margin: 0 10px;
+  color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Slider styles */
+.slider {
+  max-width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 100%;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slider-image.active {
+  opacity: 1;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-control {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(0, 247, 255, 0.884);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.slider-control:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #393646;
+}
+h1{  text-align: center;
+  color: #393646;
+}
+.store-card {
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px 150px 50px 150px;
+  padding:  80px 30px 30px 0px;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #6d5d6e;
+}
+
+  /* CSS code for the image cards */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    height: 400px;
+    margin-left: 90px;
+    display: inline-block;
+
+  }
+  .card img {
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 10px;
+    margin-top: 143px;
+  }
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .card p {
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+.store-card img {
+  border-radius: 8%;
+  display: table-cell;
+  margin-right: 100px;
+  height: 100px;
+  vertical-align: middle;
+  width: 15%;
+justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.store-card h3 {
+  font-size: 24px;
+  color: #393646;
+  text-align: center;
+  width: 100%;
+}
+h3  a{
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+h3 a :hover{
+  color: aqua;
+  cursor: grab;
+}
+.privacy_policy{
+  text-align: center;
+  text-decoration: none;
+ 
+}
+.privacy_policy li{
+  list-style: none;
+}
+.store-card p {
+  font-size: 16px;
+  color: #393646;
+  text-align: center;
+  width: 100%;
+}
+
+.store-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1c315e;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-left {
+  flex-basis: 40%;
+}
+
+.footer-left h3 {
+  color: #fff;
+}
+
+.footer-left h4 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer-left pre {
+  color: #fff;
+  font-size: 16px;
+  white-space: pre-wrap;
+  margin-top: 10px;
+}
+
+.footer-right {
+  flex-basis: 40%;
+}
+
+.footer-right h3 {
+  color: #fff;
+}
+
+.footer-right h4 {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer-right p {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer-links li {
+  display: inline-block;
+  margin-right: 10px;
+}

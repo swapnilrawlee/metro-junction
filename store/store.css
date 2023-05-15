@@ -1,0 +1,134 @@
+ /* Header styles */
+  
+ .header {
+    background-color: #1c315e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Navigation styles */
+  .nav {
+    background-color: #227c70;
+    overflow: hidden;
+  }
+  
+  .nav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+      background-color: rgba(0, 247, 255, 0.58);
+      transition: background-color 0.3s ease;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #1c315e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-left {
+    flex-basis: 40%;
+  }
+  
+  .footer-left h3 {
+    color: #fff;
+  }
+  
+  .footer-left h4 {
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .footer-left pre {
+    color: #fff;
+    font-size: 16px;
+    white-space: pre-wrap;
+    margin-top: 10px;
+  }
+  
+  .footer-right {
+    flex-basis: 40%;
+  }
+  
+  .footer-right h3 {
+    color: #fff;
+  }
+  
+  .footer-right h4 {
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .footer-right p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .footer-links {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  h3{
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  button {
+    background-color: #06f9d982; 
+    border: none; 
+    color: white; 
+    padding: 20px 20px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin-right: 10px; 
+    list-style: none;
+    margin-top: 30px;
+    text-transform: capitalize;
+  }
+  
+  button:last-child {
+    margin-right: 0; 
+  }
+ .card img{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:10px;
+  width: 250px;
+  height: 200px;
+ } 
